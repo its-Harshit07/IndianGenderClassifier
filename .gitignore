@@ -1,0 +1,57 @@
+
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+
+
+data/*.csv
+data/*.xlsx
+data/*.xls
+
+# Generated reports
+data/*.txt
+data/*.png
+
+# Generated analysis directories
+data/lpu_analysis/
+data/final_visualizations/
+
+
+data/gender_bilstm_v2.pth
+data/gender_bilstm_v3.pth
+data/gender_bilstm_v4.pth
+data/gender_bilstm_improved.pth
+data/gender_bigru.pth
+data/cnn_bilstm.pth
+data/bilstm_attention.pth
+
+# Expanded model files
+data/*expanded*.pth
+
+# Keep only final deployment models
+!data/gender_bilstm_baseline.pth
+!data/gender_bilstm_regularized.pth
+
+# Keep final deployment vocabulary
+data/vocabulary*.json
+!data/vocabulary_final.json
+
+src/
+
+# Duplicate deployment structure
+backend/
+
+# Misc
+output.txt
+*.log
+.DS_Store
+Thumbs.db
